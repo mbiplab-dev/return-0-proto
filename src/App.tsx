@@ -503,7 +503,7 @@ const SmartTouristApp: React.FC = () => {
             />
           );
         case "notifications":
-          return <NotificationScreen notifications={notifications} />;
+          return <NotificationScreen />;
         case "profile":
           return <ProfileScreen />;
         case "addTrip":
