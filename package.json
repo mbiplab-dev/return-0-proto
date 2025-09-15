@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
+    "@types/geojson": "^7946.0.16",
     "@types/i18next": "^12.1.0",
     "@types/node": "^24.3.1",
     "@types/react": "^19.1.10",
