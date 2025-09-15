@@ -87,7 +87,7 @@
     "quickCheckin": "Quick Check-in",
     "scanLocationCode": "Scan location code",
     "groupStatus": "Group Status",
-    "safetyZone": "Safety Zone",
+    "safeZone": "Safe",
     "viewSafeAreas": "View safe areas",
     "emergency": "Emergency",
     "quickContacts": "Quick contacts",
@@ -116,7 +116,8 @@
     "localPolice": "Local Police",
     "medicalEmergency": "Medical Emergency",
     "touristHelpline": "Tourist Helpline",
-    "fireService": "Fire Service"
+    "fireService": "Fire Service",
+    "readyForAdventure": "Ready to plan your next adventure?"
   },
   "trip": {
     "addNewTrip": "Add New Trip",
@@ -204,7 +205,14 @@
       "ageRequired": "Age is required",
       "dateRequired": "Date is required",
       "locationRequired": "Location is required"
-    }
+    },
+    "daysLeft": "days left",
+    "progress": "Trip Progress",
+    "viewDetails": "View Details",
+    "complete": "Complete",
+    "members": "Members",
+    "places": "Places",
+    "viewItinerary": "View itinerary"
   },
   "map": {
     "liveMap": "Live Map",
@@ -407,7 +415,42 @@
       "natural": "Natural Disaster",
       "lost": "Lost/Stranded",
       "other": "Other Emergency"
-    }
+    },
+    "helpEmergency": "Help & Emergency",
+    "whatHelpNeeded": "What kind of help do you need?",
+    "selectCategory": "Select the category that best describes your situation",
+    "recentHelpRequests": "Recent Help Requests",
+    "recently": "Recently",
+    "noRecentRequests": "No recent help requests",
+    "viewAllRequests": "View All Requests",
+    "priority": "PRIORITY",
+    "urgencyLevel": "Urgency Level",
+    "urgency": {
+      "low": "Low - Can wait for assistance",
+      "medium": "Medium - Need help soon",
+      "high": "High - Urgent assistance needed",
+      "critical": "Critical - Immediate help required"
+    },
+    "describeSituation": "Describe your situation in detail...",
+    "contactInfo": "Your Contact Information",
+    "contactPlaceholder": "Phone number or best way to reach you",
+    "additionalInfo": "Additional Information",
+    "additionalDetails": "Any other relevant details...",
+    "submitting": "Submitting...",
+    "submitHelpRequest": "Submit Help Request",
+    "criticalEmergency": "CRITICAL EMERGENCY",
+    "emergencySliderMessage": "For life-threatening emergencies, slide to call emergency services immediately",
+    "processing": "Processing...",
+    "slideToCall911": "Slide to call 911",
+    "callingEmergencyServices": "Calling Emergency Services",
+    "connectingToResponders": "Connecting you to emergency responders...",
+    "emergencyServicesContacted": "Emergency Services Contacted",
+    "helpOnTheWay": "Help is on the way. Stay on the line.",
+    "logEmergencyReport": "Log Emergency Report",
+    "respondersEnRoute": "Emergency responders are en route to your location",
+    "logging": "Logging...",
+    "logEmergencyDetails": "Log Emergency Details",
+    "emergencySOSDescription": "Emergency SOS activated - immediate assistance required"
   },
   "safety": {
     "safeZone": "Safe Zone",
@@ -491,7 +534,10 @@
     "unsupportedDevice": "Device not supported",
     "sessionExpired": "Session expired",
     "rateLimitExceeded": "Rate limit exceeded",
-    "serviceUnavailable": "Service temporarily unavailable"
+    "serviceUnavailable": "Service temporarily unavailable",
+    "failedToComplete": "Failed to complete trip",
+    "failedToSubmitHelp": "Failed to submit help request",
+    "failedToActivateSOS": "Failed to activate emergency SOS"
   },
   "success": {
     "tripSaved": "Trip saved successfully",
@@ -508,7 +554,10 @@
     "passwordChanged": "Password changed successfully",
     "accountVerified": "Account verified successfully",
     "documentUploaded": "Document uploaded successfully",
-    "reminderSet": "Reminder set successfully"
+    "reminderSet": "Reminder set successfully",
+    "tripCompleted": "Trip completed successfully",
+    "helpRequestSubmitted": "Help request submitted successfully",
+    "emergencySOSActivated": "Emergency SOS activated successfully"
   },
   "accessibility": {
     "closeButton": "Close button",

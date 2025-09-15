@@ -73,7 +73,7 @@ const BottomNavigation: React.FC<BottomNavigationProps> = ({
                 : isSpecial
                 ? "text-red-500 hover:text-red-700"
                 : "text-gray-500 hover:text-gray-900"
-            } ${isSpecial && sosState !== "inactive" ? "animate-pulse" : ""}`}
+            } ${isSpecial && sosState !== "inactive" ? "" : ""}`}
             aria-label={t(labelKey)}
           >
             <div className="relative">

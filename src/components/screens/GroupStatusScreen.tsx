@@ -68,7 +68,7 @@ const GroupStatusScreen: React.FC<GroupStatusScreenProps> = ({
                   <Users className="text-white" size={24} />
                 </div>
                 <div>
-                  <h2 className="text-xl font-bold">Travel Group</h2>
+                  <h2 className="text-xl font-bold">{t('home.travelGroup')}</h2>
                   <p className="text-purple-100">{t('home.members', { count: groupMembers.length })}</p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const GroupStatusScreen: React.FC<GroupStatusScreenProps> = ({
                   className="flex items-center justify-center space-x-2 py-3 px-4 bg-green-50 text-green-700 rounded-xl hover:bg-green-100 transition-colors"
                 >
                   <Phone size={16} />
-                  <span className="text-sm font-medium">Call</span>
+                  <span className="text-sm font-medium">{t('group.call', 'Call')}</span>
                 </button>
                 
                 <button
@@ -139,7 +139,7 @@ const GroupStatusScreen: React.FC<GroupStatusScreenProps> = ({
                   className="flex items-center justify-center space-x-2 py-3 px-4 bg-blue-50 text-blue-700 rounded-xl hover:bg-blue-100 transition-colors"
                 >
                   <MessageCircle size={16} />
-                  <span className="text-sm font-medium">Message</span>
+                  <span className="text-sm font-medium">{t('group.message', 'Message')}</span>
                 </button>
                 
                 <button
@@ -147,7 +147,7 @@ const GroupStatusScreen: React.FC<GroupStatusScreenProps> = ({
                   className="flex items-center justify-center space-x-2 py-3 px-4 bg-purple-50 text-purple-700 rounded-xl hover:bg-purple-100 transition-colors"
                 >
                   <MapPin size={16} />
-                  <span className="text-sm font-medium">Locate</span>
+                  <span className="text-sm font-medium">{t('group.locate', 'Locate')}</span>
                 </button>
               </div>
             </div>
@@ -158,36 +158,47 @@ const GroupStatusScreen: React.FC<GroupStatusScreenProps> = ({
         <div className="bg-red-50 rounded-2xl p-4 border border-red-200">
           <div className="flex items-center space-x-3 mb-3">
             <AlertTriangle className="text-red-600" size={20} />
-            <h3 className="font-semibold text-red-800">Emergency Actions</h3>
+            <h3 className="font-semibold text-red-800">{t('group.emergencyActions', 'Emergency Actions')}</h3>
           </div>
           <div className="grid grid-cols-2 gap-3">
             <button className="bg-red-600 text-white py-3 px-4 rounded-xl font-medium hover:bg-red-700 transition-colors">
-              Alert All Members
+              {t('group.alertAllMembers', 'Alert All Members')}
             </button>
             <button className="bg-white border border-red-300 text-red-600 py-3 px-4 rounded-xl font-medium hover:bg-red-50 transition-colors">
-              Emergency Call
+              {t('group.emergencyCall', 'Emergency Call')}
             </button>
           </div>
         </div>
 
         {/* Group Activity */}
         <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Activity</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('home.recentActivity')}</h3>
           <div className="space-y-3">
             {[
-              { member: 'Sarah Chen', action: 'checked in', location: 'Burj Khalifa', time: '2 min ago' },
-              { member: 'Mike Johnson', action: 'shared location', location: 'Dubai Mall', time: '5 min ago' },
-              { member: 'David Kim', action: 'marked safe', location: 'Dubai Marina', time: '8 min ago' }
+              { 
+                member: 'Sarah Chen', 
+                action: t('group.activity.checkedIn', 'checked in'), 
+                location: 'Burj Khalifa',
+              },
+              { 
+                member: 'Mike Johnson', 
+                action: t('group.activity.sharedLocation', 'shared location'), 
+                location: 'Dubai Mall',
+              },
+              { 
+                member: 'David Kim', 
+                action: t('group.activity.markedSafe', 'marked safe'), 
+                location: 'Dubai Marina',
+              }
             ].map((activity, index) => (
               <div key={index} className="flex items-center space-x-3 py-2">
                 <div className="w-2 h-2 bg-blue-400 rounded-full flex-shrink-0" />
                 <div className="flex-1 min-w-0">
                   <p className="text-sm text-gray-900">
-                    <span className="font-medium">{activity.member}</span> {activity.action} at {activity.location}
+                    <span className="font-medium">{activity.member}</span> {activity.action} {t('group.activity.at', 'at')} {activity.location}
                   </p>
                   <p className="text-xs text-gray-500 flex items-center space-x-1">
                     <Clock size={12} />
-                    <span>{activity.time}</span>
                   </p>
                 </div>
               </div>
